@@ -23,6 +23,7 @@
 }
 
 .site-header__menu-button {
+    display: block;
     margin-left: auto;
     background: none;
     border: none;
@@ -54,12 +55,12 @@
 }
 
 .site-header__navigation {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
-    max-width: 337px;
-    height: 796px;
+    width: 337px;
+    height: 100vh;
     padding-left: 40px;
     padding-right: 30px;
     padding-top: 118px;
@@ -105,10 +106,13 @@
 }
 
 .site-header__social-list {
-    display: flex;
-    align-items: center;
+    position: relative;
+    padding-left: 100px;
 
     &::before {
+        position: absolute;
+        left: 0;
+        top: 9px;
         content: '';
         width: 60px;
         height: 1px;
@@ -117,8 +121,8 @@
 }
 
 .site-header__social-item {
-    & {
-        margin-left: 40px;
+    &:not(:last-child) {
+        margin-bottom: 24px;
     }
 }
 
