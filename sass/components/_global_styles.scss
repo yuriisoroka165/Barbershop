@@ -1,0 +1,50 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.uptitle {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: $global-blackgray-color;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+        background: $global-blackgray-color;
+    }
+}
+
+.button {
+    width: 194px;
+    height: 40px;
+    font-family: $global-font;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: 1px solid $global-orange-color;
+    border-radius: 25px;
+
+    &:hover {
+        background-color: $global-orange-color;
+        color: $global-white-color;
+    }
+}

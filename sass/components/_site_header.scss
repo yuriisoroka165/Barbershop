@@ -1,0 +1,135 @@
+.site-header {}
+
+.site-header__container {}
+
+.container {}
+
+.site-header__nav {
+    position: relative;
+    display: flex;
+}
+
+.site-header__link {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 4;
+}
+
+.site-header__site-logo-icon {
+    width: 69px;
+    height: 56px;
+    fill: $global-white-color;
+}
+
+.site-header__menu-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.site-header__menu-icon {
+    width: 40px;
+    height: 40px;
+    fill: $global-white-color;
+    
+    .site-header__menu-button.is-open & {
+        fill: $global-blackgray-color;
+    }
+}
+
+.menu-icon {
+    .site-header__menu-button.is-open & {
+        display: none;
+    }
+}
+
+.close-icon {
+    display: none;
+    .site-header__menu-button.is-open & {
+        display: block;
+    }
+}
+
+.site-header__navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    max-width: 337px;
+    height: 796px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 118px;
+    // outline: 1px solid blue;
+    background: $global-white-color;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+    z-index: 2;
+
+    &.is-open {
+        display: block;
+        
+    }
+}
+
+.site-header__navigation-list {
+    margin-bottom: 24px;
+}
+
+.site-header__item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &:last-child {
+        margin-top: 64px;
+    }
+}
+
+.site-header__navigation-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    color: $global-blackgray-color;
+
+    &:hover {
+        color: $global-orange-color;
+    }
+}
+
+.site-header__button {
+    margin-bottom: 95px;
+}
+
+.site-header__social-list {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: $global-blackgray-color;
+    }
+}
+
+.site-header__social-item {
+    & {
+        margin-left: 40px;
+    }
+}
+
+.site-header__social-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    letter-spacing: 0.2em;
+    color: $global-blackgray-color;
+
+    &:hover {
+        color: $global-orange-color;
+    }
+}

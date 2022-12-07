@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/main.min.css" rel="stylesheet" href="">
+    <title>Barbershop</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__container container">
+            <nav class="site-header__nav">
+                <a class="site-header__link" href="./">
+                    <svg class="site-header__site-logo-icon">
+                        <use href="./images/icons.svg#icon-site-logo"></use>
+                    </svg>
+                </a>
+                <button class="site-header__menu-button" type="button" aria-expanded="false" 
+                    aria-controls="site-header__navigation" data-menu-button>
+                    <svg class="site-header__menu-icon" aria-label="Переключатель мобільного меню">
+                        <use class="menu-icon" href="./images/icons.svg#icon-menu"></use>
+                        <use class="close-icon" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="site-header__navigation" data-menu>
+                    <ul class="site-header__navigation-list">
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="">About</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Services and prices</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Barbers</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Contacts</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                    </ul>
+                    <button class="site-header__button button" type="button">Online-booking</button>
+                    <ul class="site-header__social-list">
+                        <li class="site-header__social-item"><a class="site-header__social-link" href="#">Instagram</a></li>
+                        <li class="site-header__social-item"><a class="site-header__social-link" href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section section">
+            <div class="hero-section__container container">
+                <div class="hero-section__wrap">
+                    <p class="hero-section__uptitle uptitle">A hair salon for men in kyiv</p>
+                    <h1 class="hero-section__title">BarberShop</h1>
+                    <p class="hero-section__description">We are experts in trendy men’s haircuts.
+                    We work quickly, carefully and with style.</p>
+                </div class="hero-section__wrap">
+            </div>
+        </section>
+        <section class="about-section section">
+            <div class="about-section__container container">
+                <p class="about-section__uptitle uptitle">About</p>
+                <h2 class="about-section__title">Best Barbershop in your city</h2>
+                <p class="about-section__downtitle">If you want to add more confidence to your image, you should visit us</p>
+                <p class="about-section__description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
+                of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
+                Therefore, we are always ready to improve everyone who comes to us!</p>
+                <button type="button" class="button">Online-booking</button>
+            </div>
+        </section>
+        <section class="prices-section section">
+            <div class="prices-section__container container">
+                <p class="prices-section__uptittle uptitle">Spend your time with the best masters</p>
+                <h2 class="prices-section__title">Services and prices</h2>
+                <div class="prices-section__wrap">
+                    <ul class="prices-section__list">
+                        <li class="prices-section__item">Men’s haircut<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Beard trim<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Mustache trim<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Straight razor shave<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Trainee’s haircut<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Haircut under the nozzle<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Children’s haircut (0-12 y.o.)<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">Camouflage of grey hair<span class="price">from 300 uah.</span></li>
+                    </ul>
+                </div>
+                <button class="prices-section__button button" type="button">Online-booking</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+</body>
+</html>
