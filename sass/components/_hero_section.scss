@@ -6,11 +6,15 @@
     height: 580px;
     padding-top: 208px;
     padding-bottom: 209px;
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/mobile/hero_image1.jpg);
+    background-image: $hero-gradient, url(../../images/mobile/hero_image1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    z-index: 1;  
+    z-index: 1;
+
+    @include retina-displays {
+        background-image: $hero-gradient, url(../../images/mobile/hero_image1@2x.jpg);
+    }
 }
 
 

@@ -20,16 +20,15 @@
                         <use href="./images/icons.svg#icon-site-logo"></use>
                     </svg>
                 </a>
-                <button class="site-header__menu-button" type="button" aria-expanded="false" 
-                    aria-controls="site-header__navigation" data-menu-button>
+                <button class="site-header__menu-button" type="button" data-menu-open>
                     <svg class="site-header__menu-icon" aria-label="Переключатель мобільного меню">
-                        <use class="menu-icon" href="./images/icons.svg#icon-menu"></use>
+                        <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="site-header__navigation" data-menu>
-                    <button type="button" class="site-header__close-button">
-                        <svg class="site-header__menu-icon" aria-label="Закрити мобільне меню">
-                            <use class="close-icon" href="./images/icons.svg#icon-close"></use>
+                <div class="site-header__navigation is-hidden" data-menu>
+                    <button type="button" class="site-header__close-button" data-menu-close>
+                        <svg class="site-header__close-icon" aria-label="Закрити мобільне меню">
+                            <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
                     <ul class="site-header__navigation-list">
@@ -70,20 +69,44 @@
                 <button type="button" class="button">Online-booking</button>
             </div>
         </section>
-        <section class="prices-section section">
+        <section class="prices-section section temp">
             <div class="prices-section__container container">
                 <p class="prices-section__uptittle uptitle">Spend your time with the best masters</p>
                 <h2 class="prices-section__title">Services and prices</h2>
                 <div class="prices-section__wrap">
                     <ul class="prices-section__list">
-                        <li class="prices-section__item">Men’s haircut<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Beard trim<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Mustache trim<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Straight razor shave<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Trainee’s haircut<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Haircut under the nozzle<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Children’s haircut (0-12 y.o.)<span class="price">from 300 uah.</span></li>
-                        <li class="prices-section__item">Camouflage of grey hair<span class="price">from 300 uah.</span></li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Men’s haircut</p>
+                            <span class="prices-section__price">from 300 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Beard trim</p>
+                            <span class="prices-section__price">from 200 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Mustache trim</p>
+                            <span class="prices-section__price">from 200 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Straight razor shave</p>
+                            <span class="prices-section__price">from 200 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Trainee’s haircut</p>
+                            <span class="prices-section__price">from 50 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Haircut under the nozzle</p>
+                            <span class="prices-section__price">from 200 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Children’s haircut (0-12 y.o.)</p>
+                            <span class="prices-section__price">from 300 uah.</span>
+                        </li>
+                        <li class="prices-section__item">
+                            <p class="prices-section__text">Camouflage of grey hair</p>
+                            <span class="prices-section__price">from 200 uah.</span>
+                        </li>
                     </ul>
                 </div>
                 <button class="prices-section__button button" type="button">Online-booking</button>
@@ -96,6 +119,6 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
