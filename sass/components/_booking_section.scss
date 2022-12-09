@@ -1,0 +1,73 @@
+.booking-section {
+    background-color: #191C26;
+}
+
+.booking-section__container {}
+
+.booking-section__title {
+    margin-bottom: 44px;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $global-white-color;
+}
+
+.booking-section__form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-section__input,
+.booking-section__textarea {
+    margin-bottom: 44px;
+    padding-bottom: 8px;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    border: none;
+    border-bottom: 1px solid $form-placeholders-color;
+    background: none;
+    color: $global-white-color;
+
+    &::placeholder {
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $form-placeholders-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $global-white-color;
+        
+        &::placeholder {
+            color: $global-white-color;
+        }
+    }
+}
+
+// .booking-section__textarea {
+//     margin-bottom: 44px;
+//     padding-bottom: 8px;
+//     border: none;
+//     border-bottom: 1px solid $form-placeholders-color;
+//     background: none;
+
+//     &::placeholder {
+//         font-size: 11px;
+//         line-height: calc(15 / 11);
+//         letter-spacing: 0.1em;
+//         text-transform: uppercase;
+//         color: $form-placeholders-color;
+//     }
+// }
+
+.booking-section__button {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $global-white-color;
+}

@@ -1,0 +1,70 @@
+.barbers-section {
+    background-color: $background-gray-color;
+}
+
+.barbers-container {}
+
+.barbers-section__uptitle {
+    margin-bottom: 20px;
+}
+
+.barbers-section__title {
+    margin-bottom: 44px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    color: $global-blackgray-color;
+}
+
+.barbers-section__list {}
+
+.barbers-section__item {
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+}
+
+.barbers-section__photo {
+    
+}
+
+.barber-name {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.barber-position {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    color: $global-orange-color;
+}
+
+.barbers-section__social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.barbers-section__social-item {}
+
+.barbers-section__social-link {
+    display: flex;
+    padding: 12px;
+    background-color: $global-white-color;
+    border-radius: 50%;
+}
+
+.barbers-section__social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $global-blackgray-color;    
+
+    .barbers-section__social-link:hover & {
+        fill: $global-orange-color;
+    }
+}

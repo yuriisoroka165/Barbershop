@@ -26,6 +26,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -360,5 +361,222 @@ ul {
 }
 
 .prices-section__button {
+  color: #FFFFFF;
+}
+
+.features-section__uptitle {
+  margin-bottom: 20px;
+}
+
+.features-section__title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.04em;
+  color: #303030;
+}
+
+.features-section__description {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.6666666667;
+}
+
+.features-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.features-section__item {
+  width: 193px;
+  max-height: 133px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F7F7F7;
+}
+.features-section__item:nth-child(odd) {
+  margin-right: 30px;
+}
+.features-section__item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.features-count {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571428571;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.features-plus {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 11px;
+  margin-left: 2px;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #FF6C00;
+}
+
+.features-text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-align: center;
+  color: #303030;
+}
+
+.barbers-section {
+  background-color: #F7F7F7;
+}
+
+.barbers-section__uptitle {
+  margin-bottom: 20px;
+}
+
+.barbers-section__title {
+  margin-bottom: 44px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  color: #303030;
+}
+
+.barbers-section__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.barber-name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.barber-position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  text-align: center;
+  color: #FF6C00;
+}
+
+.barbers-section__social-list {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.barbers-section__social-link {
+  display: flex;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.barbers-section__social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+}
+.barbers-section__social-link:hover .barbers-section__social-icon {
+  fill: #FF6C00;
+}
+
+.gallery-section__uptitle {
+  margin-bottom: 70px;
+}
+
+.gallery-section__item {
+  margin-bottom: 30px;
+}
+
+.booking-section {
+  background-color: #191C26;
+}
+
+.booking-section__title {
+  margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.booking-section__form {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-section__input,
+.booking-section__textarea {
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background: none;
+  color: #FFFFFF;
+}
+.booking-section__input::-moz-placeholder, .booking-section__textarea::-moz-placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking-section__input:-ms-input-placeholder, .booking-section__textarea:-ms-input-placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking-section__input::placeholder,
+.booking-section__textarea::placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking-section__input:focus,
+.booking-section__textarea:focus {
+  outline: none;
+  border-color: #FFFFFF;
+}
+.booking-section__input:focus::-moz-placeholder, .booking-section__textarea:focus::-moz-placeholder {
+  color: #FFFFFF;
+}
+.booking-section__input:focus:-ms-input-placeholder, .booking-section__textarea:focus:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.booking-section__input:focus::placeholder,
+.booking-section__textarea:focus::placeholder {
+  color: #FFFFFF;
+}
+
+.booking-section__button {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
   color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
