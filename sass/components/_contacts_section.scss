@@ -1,0 +1,78 @@
+.contacts-section {
+    padding-top: 30px;
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/mobile/contacts_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @include retina-displays {
+        background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/mobile/contacts_background@2x.jpg);
+    }
+}
+
+.contacts-section__container {}
+
+.contacts-section__title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $global-white-color;
+}
+
+.contacts-section__address {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-section__list {
+    margin-bottom: 44px;
+}
+
+.contacts-section__item {}
+
+.contacts-section__link {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(60 / 18);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $global-purple-color;
+}
+
+.contacts-section__link--physical-sddress {
+    & {
+        font-weight: 700;
+    }
+}
+
+.contacts-section__link--mail {
+    text-decoration: underline;
+}
+
+.contacts-section__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    fill: currentColor;
+}
+
+.contacts-section__uptitle {
+    margin-bottom: 20px;
+    color: $global-white-color;
+
+    &::before {
+        content: "";
+        background: $form-placeholders-color;
+    }
+}
+
+.contacts-section__description {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: $global-purple-color;
+}

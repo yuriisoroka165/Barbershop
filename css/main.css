@@ -579,4 +579,114 @@ ul {
   margin-left: auto;
   margin-right: auto;
   color: #FFFFFF;
+}
+
+.contacts-section {
+  padding-top: 30px;
+  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/mobile/contacts_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/mobile/contacts_background@2x.jpg);
+  }
+}
+
+.contacts-section__title {
+  margin-bottom: 40px;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.contacts-section__address {
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-section__list {
+  margin-bottom: 44px;
+}
+
+.contacts-section__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.3333333333;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #9DA4BD;
+}
+
+.contacts-section__link--physical-sddress {
+  font-weight: 700;
+}
+
+.contacts-section__link--mail {
+  text-decoration: underline;
+}
+
+.contacts-section__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  fill: currentColor;
+}
+
+.contacts-section__uptitle {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.contacts-section__uptitle::before {
+  content: "";
+  background: rgba(157, 164, 189, 0.4);
+}
+
+.contacts-section__description {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.site-footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.site-footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.site-footer__social-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.site-footer__social-item {
+  margin-left: 40px;
+}
+
+.site-footer__social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.site-footer__copyright {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: #9DA4BD;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.site-footer {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.site-footer__container {}
+
+.site-footer__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: $global-blackgray-color;
+    }
+}
+
+.site-footer__social-item {
+    margin-left: 40px;
+}
+
+.site-footer__social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: $global-blackgray-color;
+}
+
+.site-footer__copyright {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: $global-purple-color;
+}
