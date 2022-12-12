@@ -28,6 +28,15 @@
     line-height: calc(15 / 11);
     letter-spacing: 0.2em;
     color: $global-blackgray-color;
+
+    transition-property: color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
+    &:hover {
+        color: $global-orange-color;
+    }
 }
 
 .site-footer__copyright {

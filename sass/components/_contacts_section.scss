@@ -41,6 +41,15 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $global-purple-color;
+
+    transition-property: color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
+    &:hover {
+        color: $global-white-color;
+    }
 }
 
 .contacts-section__link--physical-sddress {

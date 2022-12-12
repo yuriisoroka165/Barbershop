@@ -31,6 +31,11 @@
     background: none;
     color: $global-white-color;
 
+    transition-property: border-color, color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
     &::placeholder {
         font-size: 11px;
         line-height: calc(15 / 11);
@@ -48,22 +53,6 @@
         }
     }
 }
-
-// .booking-section__textarea {
-//     margin-bottom: 44px;
-//     padding-bottom: 8px;
-//     border: none;
-//     border-bottom: 1px solid $form-placeholders-color;
-//     background: none;
-
-//     &::placeholder {
-//         font-size: 11px;
-//         line-height: calc(15 / 11);
-//         letter-spacing: 0.1em;
-//         text-transform: uppercase;
-//         color: $form-placeholders-color;
-//     }
-// }
 
 .booking-section__button {
     width: 160px;

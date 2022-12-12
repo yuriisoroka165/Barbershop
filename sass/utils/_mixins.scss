@@ -5,3 +5,21 @@
             @content
         }
 }
+
+@mixin mobile-resolution {
+    @media screen and (min-width: $mobile-breakpoint) {
+        @content
+    }
+}
+
+@mixin tablet-resolution {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content
+    }
+}
+
+@mixin desktop-resolution {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content
+    }
+}

@@ -81,6 +81,10 @@ ul {
   background: none;
   border: 1px solid #FF6C00;
   border-radius: 25px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .button:hover {
   background-color: #FF6C00;
@@ -120,6 +124,13 @@ ul {
   width: 40px;
   height: 40px;
   fill: #FFFFFF;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.site-header__menu-button:hover .site-header__menu-icon {
+  fill: #FF6C00;
 }
 
 .site-header__navigation {
@@ -152,6 +163,13 @@ ul {
   width: 40px;
   height: 40px;
   fill: #303030;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.site-header__close-button:hover .site-header__close-icon {
+  fill: #FF6C00;
 }
 
 .site-header__navigation-list {
@@ -171,6 +189,10 @@ ul {
   line-height: 1.3888888889;
   letter-spacing: 0.1em;
   color: #303030;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .site-header__navigation-link:hover {
   color: #FF6C00;
@@ -204,6 +226,10 @@ ul {
   line-height: 1.3571428571;
   letter-spacing: 0.2em;
   color: #303030;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .site-header__social-link:hover {
   color: #FF6C00;
@@ -492,6 +518,10 @@ ul {
   width: 20px;
   height: 20px;
   fill: #303030;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .barbers-section__social-link:hover .barbers-section__social-icon {
   fill: #FF6C00;
@@ -535,6 +565,10 @@ ul {
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background: none;
   color: #FFFFFF;
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .booking-section__input::-moz-placeholder, .booking-section__textarea::-moz-placeholder {
   font-size: 11px;
@@ -621,6 +655,13 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #9DA4BD;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.contacts-section__link:hover {
+  color: #FFFFFF;
 }
 
 .contacts-section__link--physical-sddress {
@@ -682,6 +723,13 @@ ul {
   line-height: 1.3636363636;
   letter-spacing: 0.2em;
   color: #303030;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.site-footer__social-link:hover {
+  color: #FF6C00;
 }
 
 .site-footer__copyright {

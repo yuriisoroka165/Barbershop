@@ -33,6 +33,15 @@
     width: 40px;
     height: 40px;
     fill: $global-white-color;
+
+    transition-property: fill;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
+    .site-header__menu-button:hover & {
+        fill: $global-orange-color
+    }
 }
 
 .site-header__navigation {
@@ -68,6 +77,15 @@
     width: 40px;
     height: 40px;
     fill: $global-blackgray-color;
+
+    transition-property: fill;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
+    .site-header__close-button:hover & {
+        fill: $global-orange-color;
+    }
 }
 
 .site-header__navigation-list {
@@ -90,6 +108,11 @@
     line-height: calc(25 / 18);
     letter-spacing: 0.1em;
     color: $global-blackgray-color;
+
+    transition-property: color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
 
     &:hover {
         color: $global-orange-color;
@@ -127,6 +150,11 @@
     line-height: calc(19 / 14);
     letter-spacing: 0.2em;
     color: $global-blackgray-color;
+
+    transition-property: color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
 
     &:hover {
         color: $global-orange-color;

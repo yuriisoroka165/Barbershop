@@ -44,6 +44,11 @@
     border: 1px solid $global-orange-color;
     border-radius: 25px;
 
+    transition-property: background-color, color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
     &:hover {
         background-color: $global-orange-color;
         color: $global-white-color;

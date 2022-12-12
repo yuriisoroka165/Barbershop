@@ -62,7 +62,12 @@
 .barbers-section__social-icon {
     width: 20px;
     height: 20px;
-    fill: $global-blackgray-color;    
+    fill: $global-blackgray-color;
+    
+    transition-property: fill;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
 
     .barbers-section__social-link:hover & {
         fill: $global-orange-color;
