@@ -740,21 +740,31 @@ ul {
 }
 
 .modal-window {
+  padding: 20px;
   outline: 1px solid blue;
   width: 450px;
+  background-color: #191C26;
 }
 
 .modal-window__close-button {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
   border: none;
   background: none;
 }
 
 .modal-window__close-icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  fill: #FFFFFF;
+}
+.modal-window__close-button:hover .modal-window__close-icon {
+  fill: #FF6C00;
 }
 
 .modal-window__tittle {
+  margin-bottom: 44px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -768,4 +778,63 @@ ul {
 .modal-window__form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-window__input,
+.modal-window__textarea {
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background: none;
+  color: #FFFFFF;
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.modal-window__input::-moz-placeholder, .modal-window__textarea::-moz-placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.modal-window__input:-ms-input-placeholder, .modal-window__textarea:-ms-input-placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.modal-window__input::placeholder,
+.modal-window__textarea::placeholder {
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.modal-window__input:focus,
+.modal-window__textarea:focus {
+  outline: none;
+  border-color: #FFFFFF;
+}
+.modal-window__input:focus::-moz-placeholder, .modal-window__textarea:focus::-moz-placeholder {
+  color: #FFFFFF;
+}
+.modal-window__input:focus:-ms-input-placeholder, .modal-window__textarea:focus:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.modal-window__input:focus::placeholder,
+.modal-window__textarea:focus::placeholder {
+  color: #FFFFFF;
+}
+
+.modal-window__button {
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

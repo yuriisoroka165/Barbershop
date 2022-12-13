@@ -38,7 +38,7 @@
                         <li class="site-header__item"><a class="site-header__navigation-link" href="#contacts">Contacts</a></li>
                         <li class="site-header__item"><a class="site-header__navigation-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
                     </ul>
-                    <button class="site-header__button button" type="button">Online-booking</button>
+                    <button data-modal-open class="site-header__button button" type="button">Online-booking</button>
                     <ul class="site-header__social-list">
                         <li class="site-header__social-item"><a class="site-header__social-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                         <li class="site-header__social-item"><a class="site-header__social-link" href="#" target="_blank" rel="noopener noreferrer">Youtube</a></li>
@@ -66,7 +66,7 @@
                 <p class="about-section__description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
                 of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
                 Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button type="button" class="button">Online-booking</button>
+                <button data-modal-open type="button" class="button">Online-booking</button>
             </div>
         </section>
         <section class="prices-section section temp">
@@ -109,7 +109,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="prices-section__button button" type="button">Online-booking</button>
+                <button data-modal-open class="prices-section__button button" type="button">Online-booking</button>
             </div>
         </section>
         <section class="features-section section">
@@ -373,16 +373,16 @@
     </footer>
     <div class="modal-window-backdrop modal-hidden" data-modal>
         <div class="modal-window">
-            <button class="modal-window__close-button">
+            <button class="modal-window__close-button" data-modal-close>
                 <svg class="modal-window__close-icon">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <h2 class="modal-window__tittle">Online-booking</h2>
             <form class="modal-window__form">
-                <input class="modal-window__input" type="name">
-                <input class="modal-window__input" type="phone">
-                <textarea class="modal-window__textarea" name="" id="message" rows="3"></textarea>
+                <input class="modal-window__input" type="name" placeholder="name*">
+                <input class="modal-window__input" type="phone" placeholder="phone*">
+                <textarea class="modal-window__textarea" name="" id="message" rows="3" placeholder="message*"></textarea>
                 <button class="modal-window__button button" type="submit">Send</button>
             </form>
         </div>

@@ -4,21 +4,32 @@
 .modal-hidden {}
 
 .modal-window {
+    padding: 20px;
     outline: 1px solid blue;
     width: 450px;
+    background-color: $background-dark-color;
 }
 
 .modal-window__close-button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
     border: none;
     background: none;
 }
 
 .modal-window__close-icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    fill: $global-white-color;
+    
+    .modal-window__close-button:hover & {
+        fill: $global-orange-color;
+    }
 }
 
 .modal-window__tittle {
+    margin-bottom: 44px;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 700;
@@ -34,10 +45,44 @@
     flex-direction: column;
 }
 
-.modal-window__input {}
+.modal-window__input,
+.modal-window__textarea {
+    margin-bottom: 44px;
+    padding-bottom: 8px;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    border: none;
+    border-bottom: 1px solid $form-placeholders-color;
+    background: none;
+    color: $global-white-color;
+
+    transition-property: border-color, color;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
+    transition-delay: 0;
+
+    &::placeholder {
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $form-placeholders-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $global-white-color;
+        
+        &::placeholder {
+            color: $global-white-color;
+        }
+    }
+}
 
 .modal-window__textarea {}
 
-.modal-window__button {}
-
-.button {}
+.modal-window__button {
+    margin-left: auto;
+    margin-right: auto;
+    color: $global-white-color;
+}
