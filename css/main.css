@@ -737,4 +737,35 @@ ul {
   line-height: 1.3636363636;
   letter-spacing: 0.2em;
   color: #9DA4BD;
+}
+
+.modal-window {
+  outline: 1px solid blue;
+  width: 450px;
+}
+
+.modal-window__close-button {
+  border: none;
+  background: none;
+}
+
+.modal-window__close-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-window__tittle {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

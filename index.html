@@ -32,10 +32,10 @@
                         </svg>
                     </button>
                     <ul class="site-header__navigation-list">
-                        <li class="site-header__item"><a class="site-header__navigation-link" href="">About</a></li>
-                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Services and prices</a></li>
-                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Barbers</a></li>
-                        <li class="site-header__item"><a class="site-header__navigation-link" href="">Contacts</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="#about">About</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="#prices">Services and prices</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="#barbers">Barbers</a></li>
+                        <li class="site-header__item"><a class="site-header__navigation-link" href="#contacts">Contacts</a></li>
                         <li class="site-header__item"><a class="site-header__navigation-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
                     </ul>
                     <button class="site-header__button button" type="button">Online-booking</button>
@@ -61,7 +61,7 @@
         <section class="about-section section">
             <div class="about-section__container container">
                 <p class="about-section__uptitle uptitle">About</p>
-                <h2 class="about-section__title">Best Barbershop in your city</h2>
+                <h2 id="about" class="about-section__title">Best Barbershop in your city</h2>
                 <p class="about-section__downtitle">If you want to add more confidence to your image, you should visit us</p>
                 <p class="about-section__description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
                 of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
@@ -72,7 +72,7 @@
         <section class="prices-section section temp">
             <div class="prices-section__container container">
                 <p class="prices-section__uptittle uptitle">Spend your time with the best masters</p>
-                <h2 class="prices-section__title">Services and prices</h2>
+                <h2 id="prices" class="prices-section__title">Services and prices</h2>
                 <div class="prices-section__wrap">
                     <ul class="prices-section__list">
                         <li class="prices-section__item">
@@ -140,7 +140,7 @@
         <section class="barbers-section section">
             <div class="barbers-container container">
                 <p class="barbers-section__uptitle uptitle">For true enjoyers of the atmosphere</p>
-                <h2 class="barbers-section__title title">Our barbers</h2>
+                <h2 id="barbers" class="barbers-section__title title">Our barbers</h2>
                 <ul class="barbers-section__list">
                     <li class="barbers-section__item">
                         <picture class="barbers-section__photo">
@@ -317,7 +317,7 @@
         </section>
         <section class="contacts-section section">
             <div class="contacts-section__container container">
-                <h2 class="contacts-section__title title">Contacts</h2>
+                <h2 id="contacts" class="contacts-section__title title">Contacts</h2>
                 <address class="contacts-section__address">
                     <ul class="contacts-section__list">
                         <li class="contacts-section__item">
@@ -371,6 +371,22 @@
             </p>
         </div>
     </footer>
+    <div class="modal-window-backdrop modal-hidden" data-modal>
+        <div class="modal-window">
+            <button class="modal-window__close-button">
+                <svg class="modal-window__close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-window__tittle">Online-booking</h2>
+            <form class="modal-window__form">
+                <input class="modal-window__input" type="name">
+                <input class="modal-window__input" type="phone">
+                <textarea class="modal-window__textarea" name="" id="message" rows="3"></textarea>
+                <button class="modal-window__button button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
