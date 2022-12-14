@@ -5,6 +5,10 @@
     width: 100%;
     height: 100%;
     background-color: $modal-window-backdrop-color;
+
+    transition-property: opacity;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
     z-index: 5;
 
     &.modal-hidden {
@@ -24,6 +28,10 @@
     border-radius: 4px;
     background-color: $background-dark-color;
     transform: translate(-50%, -50%) scale(1);
+
+    transition-property: transform;
+    transition-duration: $global-transition-duration;
+    transition-timing-function: $global-transition-timing-function;
 
     .modal-window-backdrop.modal-hidden & {
         transform: translate(-50%, -50%) scale(1.1);
