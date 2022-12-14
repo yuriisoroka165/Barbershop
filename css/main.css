@@ -565,7 +565,7 @@ ul {
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background: none;
   color: #FFFFFF;
-  transition-property: border-color, color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -576,6 +576,11 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  -moz-transition-property: color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .booking-section__input:-ms-input-placeholder, .booking-section__textarea:-ms-input-placeholder {
   font-size: 11px;
@@ -583,6 +588,11 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  -ms-transition-property: color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .booking-section__input::placeholder,
 .booking-section__textarea::placeholder {
@@ -591,6 +601,10 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .booking-section__input:focus,
 .booking-section__textarea:focus {
@@ -739,11 +753,32 @@ ul {
   color: #9DA4BD;
 }
 
+.modal-window-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+.modal-window-backdrop.modal-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   padding: 20px;
-  outline: 1px solid blue;
   width: 450px;
+  border-radius: 4px;
   background-color: #191C26;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-window-backdrop.modal-hidden .modal-window {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal-window__close-button {
@@ -790,7 +825,7 @@ ul {
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background: none;
   color: #FFFFFF;
-  transition-property: border-color, color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -801,6 +836,11 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  -moz-transition-property: color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .modal-window__input:-ms-input-placeholder, .modal-window__textarea:-ms-input-placeholder {
   font-size: 11px;
@@ -808,6 +848,11 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  -ms-transition-property: color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .modal-window__input::placeholder,
 .modal-window__textarea::placeholder {
@@ -816,6 +861,10 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .modal-window__input:focus,
 .modal-window__textarea:focus {

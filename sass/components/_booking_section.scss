@@ -31,7 +31,7 @@
     background: none;
     color: $global-white-color;
 
-    transition-property: border-color, color;
+    transition-property: border-color;
     transition-duration: $global-transition-duration;
     transition-timing-function: $global-transition-timing-function;
     transition-delay: 0;
@@ -42,6 +42,11 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: $form-placeholders-color;
+
+        transition-property: color;
+        transition-duration: $global-transition-duration;
+        transition-timing-function: $global-transition-timing-function;
+        transition-delay: 0;
     }
 
     &:focus {
