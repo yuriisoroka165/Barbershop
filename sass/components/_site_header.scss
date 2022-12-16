@@ -1,16 +1,14 @@
 .site-header {
+    position: absolute;
     padding-top: 40px;
     padding-bottom: 40px;
-    
-    @include tablet-resolution {
-    
-    }
 }
 
-.site-header__container {}
+.site-header__container {
+    width: 100vw;
+}
 
 .site-header__nav {
-    position: relative;
     display: flex;
 }
 
@@ -74,7 +72,12 @@
 
     @include tablet-resolution {
         position: relative;
-        display: block;
+        margin-left: auto;
+        width: 570px;
+        height: 76px;
+        display: flex;
+        column-gap: 37px;
+        align-items: baseline;
         padding: 0;
         background: none;
         box-shadow: none;
@@ -111,10 +114,11 @@
 }
 
 .site-header__navigation-list {
-    margin-bottom: 24px;
+    margin-bottom: 64px;
 
     @include tablet-resolution {
         display: flex;
+        margin: 0;
     }
 }
 
@@ -123,8 +127,8 @@
         margin-bottom: 24px;
     }
 
-    &:last-child {
-        margin-top: 64px;
+    @include tablet-resolution {
+        margin-left: 16px;
     }
 }
 
@@ -146,6 +150,7 @@
 
     @include tablet-resolution {
         font-style: normal;
+        font-weight: 600;
         font-size: 12px;
         line-height: calc(16 / 12);
         letter-spacing: 0.1em;
@@ -153,8 +158,29 @@
     }
 }
 
-.site-header__button {
+.site-header__contacts-list {
     margin-bottom: 95px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet-resolution {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+}
+
+.contacts-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.site-header__button {
+    @include tablet-resolution {
+        width: 160px;
+
+        color: $global-white-color;
+    }
 }
 
 .site-header__social-list {
@@ -169,6 +195,16 @@
         width: 60px;
         height: 1px;
         background-color: $global-blackgray-color;
+    }
+
+    @include tablet-resolution {
+        position: absolute;
+        bottom: -500px;
+        left: -160px;
+        padding: 0;
+        display: flex;
+        transform: rotate(-90deg);
+        margin-right: 50px;
     }
 }
 
