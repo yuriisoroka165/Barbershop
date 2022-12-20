@@ -1,9 +1,21 @@
 .site-footer {
     padding-top: 44px;
     padding-bottom: 44px;
+
+    @include tablet-resolution {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
 }
 
-.site-footer__container {}
+.site-footer__container {
+    @include tablet-resolution {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
 .site-footer__social-list {
     display: flex;
@@ -15,6 +27,10 @@
         width: 60px;
         height: 1px;
         background-color: $global-blackgray-color;
+    }
+
+    @include tablet-resolution {
+        margin: 0;
     }
 }
 

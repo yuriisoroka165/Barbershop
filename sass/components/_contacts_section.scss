@@ -7,6 +7,16 @@
     @include retina-displays {
         background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/mobile/contacts_background@2x.jpg);
     }
+
+    @include tablet-resolution {
+        padding-top: 100px;
+        background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/tablet/contacts_background.jpg);
+        background-size: cover;
+        
+        @include retina-displays {
+            background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/tablet/contacts_background@2x.jpg);
+        }
+    }
 }
 
 .contacts-section__container {}
@@ -18,6 +28,18 @@
     text-align: center;
     letter-spacing: 0.05em;
     color: $global-white-color;
+
+    @include tablet-resolution {
+        text-align: left;
+    }
+}
+
+.contact-section__wrap {
+    @include tablet-resolution {
+        display: flex;
+        gap: 50px;
+        align-items: baseline;
+    }
 }
 
 .contacts-section__address {
@@ -27,6 +49,10 @@
 
 .contacts-section__list {
     margin-bottom: 44px;
+    
+    @include tablet-resolution {
+        width: 330px;
+    }
 }
 
 .contacts-section__item {}
@@ -55,6 +81,9 @@
 .contacts-section__link--physical-sddress {
     & {
         font-weight: 700;
+    }
+
+    @include tablet-resolution {
     }
 }
 

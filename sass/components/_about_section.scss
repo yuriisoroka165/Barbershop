@@ -15,7 +15,12 @@
     }
 }
 
-.about-section__images-list {}
+.about-section__images-list {
+    @include desktop-resolution {
+        display: flex;
+        column-gap: 30px;
+    }
+}
 
 .about-section__images-item {
     &:not(:last-child) {
@@ -29,6 +34,10 @@
 .about-section__content {
     @include tablet-resolution {
         width: 330px;
+    }
+
+    @include desktop-resolution {
+        width: 470px;
     }
 }
 

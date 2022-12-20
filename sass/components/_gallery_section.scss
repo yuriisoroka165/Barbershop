@@ -4,12 +4,27 @@
 
 .gallery-section__uptitle {
     margin-bottom: 70px;
+
+    @include tablet-resolution {
+        margin-bottom: 44px;
+    }
 }
 
-.gallery-section__list {}
+.gallery-section__list {
+    @include tablet-resolution {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
 
 .gallery-section__item {
     margin-bottom: 30px;
+
+    @include tablet-resolution {
+        margin: 0;
+    }
 }
 
-.gallery-section__photo {}
+.gallery-section__photo {
+}

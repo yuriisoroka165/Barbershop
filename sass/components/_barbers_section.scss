@@ -32,7 +32,9 @@
 }
 
 .barbers-section__photo {
-    
+    @include tablet-resolution {
+        // width: 450px;
+    }
 }
 
 .barber-name {

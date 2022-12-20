@@ -10,6 +10,10 @@
 
 .site-header__nav {
     display: flex;
+
+    @include desktop-resolution {
+        margin-left: 100px;
+    }
 }
 
 .site-header__link {
@@ -81,6 +85,14 @@
         padding: 0;
         background: none;
         box-shadow: none;
+    }
+
+    @include desktop-resolution {
+        & {
+            width: 950px;
+            margin-left: 120px;
+            gap: 0;
+        }
     }
 }
 
@@ -168,6 +180,12 @@
         margin: 0;
         flex-direction: column-reverse;
     }
+
+    @include desktop-resolution {
+        flex-direction: row;
+        align-items: baseline;
+        margin-left: 254px;
+    }
 }
 
 .contacts-item {
@@ -184,12 +202,17 @@
             margin-bottom: 20px;
         }
     }
+
+    @include desktop-resolution {
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+    }
 }
 
 .site-header__button {
     @include tablet-resolution {
         width: 160px;
-
         color: $global-white-color;
     }
 }
@@ -219,6 +242,10 @@
         &::before {
             position: relative;
         }
+    }
+
+    @include desktop-resolution {
+        left: -300px;
     }
 }
 

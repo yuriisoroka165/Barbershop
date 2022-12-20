@@ -8,6 +8,11 @@
         padding-left: 39px;
         padding-right: 39px;
     }
+
+    @include desktop-resolution {
+        padding-left: 215px;
+        padding-right: 215px;
+    }
 }
 
 .section {

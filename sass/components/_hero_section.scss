@@ -23,6 +23,24 @@
         padding-right: 90px;
         padding-bottom: 237px;
         background-image: $hero-gradient, url(../../images/tablet/hero_image1.jpg);
+
+        @include retina-displays {
+            background-image: $hero-gradient, url(../../images/tablet/hero_image1@2x.jpg);
+        }
+    }
+
+    @include desktop-resolution {
+        max-width: 1070px;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: $hero-gradient, url(../../images/desktop/hero_image1.jpg);
+        background-size: cover;
+        
+        @include retina-displays {
+            background-image: $hero-gradient, url(../../images/desktop/hero_image1@2x.jpg);
+        }
     }
 }
 
