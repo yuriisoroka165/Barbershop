@@ -41,6 +41,11 @@
     padding-right: 20px;
     text-align: left;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+    @include tablet-resolution {
+        width: 690px;
+        height: 444px;
+    }
 }
 
 .prices-section__list {
@@ -66,6 +71,12 @@
         height: 1px;
         background: rgba(157, 164, 189, 0.12);
         flex-grow: 1;
+    }
+
+    @include tablet-resolution {
+        gap: 12px;
+        font-size: 18px;
+        line-height: calc(30 / 18);
     }
 }
 

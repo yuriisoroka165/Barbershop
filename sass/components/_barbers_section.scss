@@ -2,7 +2,12 @@
     background-color: $background-gray-color;
 }
 
-.barbers-container {}
+.barbers-container {
+    @include tablet-resolution {
+        padding-left: 159px;
+        padding-right: 159px;
+    }
+}
 
 .barbers-section__uptitle {
     margin-bottom: 20px;

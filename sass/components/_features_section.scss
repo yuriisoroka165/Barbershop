@@ -12,21 +12,33 @@
     font-style: normal;
     font-size: 42px;
     line-height: calc(49 / 42);
-    letter-spacing: 0.04em;
-    color: $global-blackgray-color;;
+    letter-spacing: 0.05em;
+    color: $global-blackgray-color;
+
+    @include tablet-resolution {
+        width: 449px;
+    }
 }
 
 .features-section__description {
     margin-bottom: 44px;
     font-size: 18px;
     line-height: calc(30 / 18);
+
+    @include tablet-resolution {
+        width: 500px;
+    }
 }
 
 .features-section__list {
     display: flex;
     flex-wrap: wrap;
-    // gap: 30px;
     flex-shrink: 0;
+
+    @include tablet-resolution {
+        width: 450px;
+        margin-left: auto;
+    }
 }
 
 .features-section__item {
@@ -47,6 +59,10 @@
     
     &:nth-child(even) {
         margin-top: 30px;
+    }
+
+    @include tablet-resolution {
+        width: 210px;
     }
 }
 
@@ -77,4 +93,12 @@
     line-height: calc(15 / 11);
     text-align: center;
     color: $global-blackgray-color;
+
+    @include tablet-resolution {
+        width: 122px;
+
+        .features-section__item:nth-child(3) & {
+            width: 93px;
+        }
+    }
 }

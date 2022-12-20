@@ -62,13 +62,33 @@
         </section>
         <section class="about-section section">
             <div class="about-section__container container">
-                <p class="about-section__uptitle uptitle">About</p>
-                <h2 id="about" class="about-section__title">Best Barbershop in your city</h2>
-                <p class="about-section__downtitle">If you want to add more confidence to your image, you should visit us</p>
-                <p class="about-section__description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
-                of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
-                Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button data-modal-open type="button" class="button">Online-booking</button>
+                <div class="about-section__images-wrap">
+                    <ul class="about-section__images-list">
+                        <li class="about-section__images-item">
+                            <picture class="about-section__image">
+                                <source srcset="" media="(min-width: 1200px)" type="image/jpeg">
+                                <source srcset="./images/tablet/about_image1.jpg 1x, ./images/tablet/about_image1@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                <img src="./images/tablet/about_image1.jpg" alt="Про нас картинка 1">
+                            </picture>
+                        </li>
+                        <li class="about-section__images-item">
+                            <picture class="about-section__image">
+                                <source srcset="" media="(min-width: 1200px)" type="image/jpeg">
+                                <source srcset="./images/tablet/about_image2.jpg 1x, ./images/tablet/about_image2@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+                                <img src="./images/tablet/about_image2.jpg" alt="Про нас картинка 2">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-section__content">
+                    <p class="about-section__uptitle uptitle">About</p>
+                    <h2 id="about" class="about-section__title">Best Barbershop in your city</h2>
+                    <p class="about-section__downtitle">If you want to add more confidence to your image, you should visit us</p>
+                    <p class="about-section__description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
+                    of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
+                    Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button data-modal-open type="button" class="about-section__button button">Online-booking</button>
+                </div>
             </div>
         </section>
         <section class="prices-section section temp">
