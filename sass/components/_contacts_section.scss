@@ -17,9 +17,17 @@
             background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/tablet/contacts_background@2x.jpg);
         }
     }
+
+    @include desktop-resolution {
+        // width: 800px;
+    }
 }
 
-.contacts-section__container {}
+.contacts-section__container {
+    @include desktop-resolution {
+        padding-left: 100px;
+    }
+}
 
 .contacts-section__title {
     margin-bottom: 40px;
@@ -39,6 +47,11 @@
         display: flex;
         gap: 50px;
         align-items: baseline;
+    }
+
+    @include desktop-resolution {
+        flex-direction: column;
+        gap: 26px;
     }
 }
 
@@ -83,7 +96,8 @@
         font-weight: 700;
     }
 
-    @include tablet-resolution {
+    @include desktop-resolution {
+        
     }
 }
 

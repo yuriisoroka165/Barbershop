@@ -6,6 +6,15 @@
     @include retina-displays {
         background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/mobile/prices_background@2x.jpg);
     }
+
+    @include desktop-resolution {
+        background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/desktop/prices_background.jpg);
+        background-size: cover;
+
+        @include retina-displays {
+            background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/desktop/prices_background@2x.jpg);
+        }
+    }
 }
 
 .prices-section__container {
@@ -29,6 +38,11 @@
     line-height: calc(47 / 40);
     letter-spacing: 0.05em;
     color: $global-white-color;
+
+    @include desktop-resolution {
+        font-size: 42px;
+        line-height: calc(49 / 42);
+    }
 }
 
 .prices-section__wrap {
@@ -45,6 +59,11 @@
     @include tablet-resolution {
         width: 690px;
         height: 444px;
+    }
+
+    @include desktop-resolution {
+        width: 100%;
+        background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
     }
 }
 
@@ -91,4 +110,8 @@
 
 .prices-section__button {
     color: $global-white-color;
+
+    @include desktop-resolution {
+        width: 160px;
+    }
 }

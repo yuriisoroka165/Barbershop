@@ -53,6 +53,7 @@ ul {
   .container {
     padding-left: 215px;
     padding-right: 215px;
+    width: 1700px;
   }
 }
 
@@ -64,6 +65,12 @@ ul {
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -509,6 +516,11 @@ ul {
 .about-section__images-item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1600px) {
+  .about-section__images-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about-section__content {
@@ -536,6 +548,13 @@ ul {
   letter-spacing: 0.05em;
   color: #303030;
 }
+@media screen and (min-width: 1600px) {
+  .about-section__title {
+    width: 470px;
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+}
 
 .about-section__downtitle {
   margin-bottom: 20px;
@@ -561,6 +580,17 @@ ul {
     margin-bottom: 77px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .about-section__description {
+    margin-bottom: 42px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about-section__button {
+    width: 160px;
+  }
+}
 
 .prices-section {
   background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/mobile/prices_background.jpg);
@@ -570,6 +600,17 @@ ul {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prices-section {
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/mobile/prices_background@2x.jpg);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .prices-section {
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/desktop/prices_background.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .prices-section {
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/desktop/prices_background@2x.jpg);
   }
 }
 
@@ -594,6 +635,12 @@ ul {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1600px) {
+  .prices-section__title {
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+}
 
 .prices-section__wrap {
   width: 418px;
@@ -610,6 +657,12 @@ ul {
   .prices-section__wrap {
     width: 690px;
     height: 444px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .prices-section__wrap {
+    width: 100%;
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
@@ -647,6 +700,20 @@ ul {
 
 .prices-section__button {
   color: #FFFFFF;
+}
+@media screen and (min-width: 1600px) {
+  .prices-section__button {
+    width: 160px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .features-section__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    justify-content: flex-end;
+  }
 }
 
 .features-section__uptitle {
@@ -690,6 +757,11 @@ ul {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1600px) {
+  .features-section__list {
+    margin-left: 100px;
+  }
+}
 
 .features-section__item {
   width: 193px;
@@ -712,6 +784,11 @@ ul {
 @media screen and (min-width: 768px) {
   .features-section__item {
     width: 210px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .features-section__item {
+    width: 170px;
   }
 }
 
@@ -762,6 +839,12 @@ ul {
     padding-right: 159px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .barbers-container {
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
 
 .barbers-section__uptitle {
   margin-bottom: 20px;
@@ -777,8 +860,20 @@ ul {
   color: #303030;
 }
 
+@media screen and (min-width: 1600px) {
+  .barbers-section__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .barbers-section__item:not(:last-child) {
   margin-bottom: 64px;
+}
+@media screen and (min-width: 1600px) {
+  .barbers-section__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .barber-name {
@@ -822,6 +917,13 @@ ul {
   fill: #FF6C00;
 }
 
+@media screen and (min-width: 1600px) {
+  .gallery-section__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .gallery-section__uptitle {
   margin-bottom: 70px;
 }
@@ -838,6 +940,11 @@ ul {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .gallery-section__list {
+    justify-content: space-between;
+  }
+}
 
 .gallery-section__item {
   margin-bottom: 30px;
@@ -848,8 +955,28 @@ ul {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .booking-contacts-wrap {
+    display: flex;
+  }
+}
+
 .booking-section {
   background-color: #191C26;
+}
+@media screen and (min-width: 1600px) {
+  .booking-section {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 315px;
+    padding-right: 30px;
+  }
+}
+
+.booking-section__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .booking-section__title {
@@ -878,6 +1005,16 @@ ul {
     flex-wrap: wrap;
     gap: 30px;
   }
+}
+@media screen and (min-width: 1600px) {
+  .booking-section__form {
+    flex-direction: column;
+  }
+}
+
+.booking-section__wrap {
+  display: flex;
+  gap: 30px;
 }
 
 .booking-section__input,
@@ -953,11 +1090,21 @@ ul {
     margin-bottom: 14px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .booking-section__input {
+    width: 270px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .booking-section__textarea {
     width: 100%;
     margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .booking-section__textarea {
+    width: 570px;
   }
 }
 
@@ -996,6 +1143,11 @@ ul {
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.9), rgba(17, 19, 25, 0.9)), url(../../images/tablet/contacts_background@2x.jpg);
   }
 }
+@media screen and (min-width: 1600px) {
+  .contacts-section__container {
+    padding-left: 100px;
+  }
+}
 
 .contacts-section__title {
   margin-bottom: 40px;
@@ -1016,6 +1168,12 @@ ul {
     display: flex;
     gap: 50px;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contact-section__wrap {
+    flex-direction: column;
+    gap: 26px;
   }
 }
 

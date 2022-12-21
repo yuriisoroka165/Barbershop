@@ -12,6 +12,7 @@
     @include desktop-resolution {
         padding-left: 215px;
         padding-right: 215px;
+        width: 1700px;
     }
 }
 
@@ -22,6 +23,11 @@
     @include tablet-resolution {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    @include desktop-resolution {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 

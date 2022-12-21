@@ -1,6 +1,15 @@
 .features-section {}
 
-.features-section__container {}
+.features-section__container {
+    @include desktop-resolution {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+        justify-content: flex-end;
+    }
+}
+
+.features-section__wrap {}
 
 .features-section__uptitle {
     margin-bottom: 20px;
@@ -39,6 +48,10 @@
         width: 450px;
         margin-left: auto;
     }
+
+    @include desktop-resolution {
+        margin-left: 100px;
+    }
 }
 
 .features-section__item {
@@ -63,6 +76,10 @@
 
     @include tablet-resolution {
         width: 210px;
+    }
+
+    @include desktop-resolution {
+        width: 170px;
     }
 }
 

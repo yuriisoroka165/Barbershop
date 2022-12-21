@@ -7,6 +7,11 @@
         padding-left: 159px;
         padding-right: 159px;
     }
+
+    @include desktop-resolution {
+        padding-left: 215px;
+        padding-right: 215px;
+    }
 }
 
 .barbers-section__uptitle {
@@ -23,11 +28,22 @@
     color: $global-blackgray-color;
 }
 
-.barbers-section__list {}
+.barbers-section__list {
+    @include desktop-resolution {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 .barbers-section__item {
     &:not(:last-child) {
         margin-bottom: 64px;
+    }
+
+    @include desktop-resolution {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
     }
 }
 

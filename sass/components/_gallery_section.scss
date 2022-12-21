@@ -1,6 +1,11 @@
 .gallery-section {}
 
-.gallery-section__container {}
+.gallery-section__container {
+    @include desktop-resolution {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 .gallery-section__uptitle {
     margin-bottom: 70px;
@@ -15,6 +20,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+    }
+
+    @include desktop-resolution {
+        justify-content: space-between;
     }
 }
 
